@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta anme="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Premier Mart | ecommerce website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+
+ <style>
+body {
+  font-family: Arial, Helvetica, sans-serif; 
+  font-size: 20px;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    
+}
+
+li a:hover:not(.active) {
+    background-color: #9c9c9c;
+    border-radius: 16px;
+    padding: 6px;
+}
+
+.active {
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 6px;
+}
+</style>
+
+    </head>
+    <body>
+<!------------------------------- top button --------------------------->
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+        <div class="header">
+            <div class="container">
+                <div class="navbar">
+                    <div class="logo">
+                        <a href="index.html"></a><img src="images/xxx2.png" width="125px"><!---to remove background of the image logo-->
+                    </div>
+                    <nav>
+                        <ul id="menuitems">
+                            <li><a class="active" href="index.html">HOME</a></li>
+                            <li><a href="products.html">PRODUCTS</a></li>
+                            <li><a href="contact.html">CONTACT</a></li>
+                            <li><a href="about.html">LEADERSHIP</a></li>
+                            <li><a href="http://localhost/E-commerce/registration%20_%20login/index.php">ACCOUNT</a></li>
+                        </ul>
+                    </nav>
+                    <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+                    <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+                </div>
+                <div class="row">
+                    <div class="col-2">
+
+                        <h1>Give your workout <br>A new style!</h1>
+                        <p>Success is not always about greatness. It's about Consistency.<br>Consistent hard work gains success.<br> Greatness will come.</p>
+                        
+                    </div> 
+                    <div class="col-2">
+                        <img src="images/image1.png" alt="">
+                    </div>  
+                </div>
+            </div>
+        </div>
+
+        <!------featured categories-------->     
+        <div class="categories">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-3">
+                       <a href="laptops.html"><img id="myimage" src="images/laptop.jpg"></a>
+                    </div>
+                    <div class="col-3">
+                       <a href="Mobiles.html"><img id="myimage" src="images/mobile.jpg"></a>
+    
+                    </div>
+                    <div class="col-3">
+                       <a href="Speakers.html"><img id="myimage" src="images/speaker1.jpg"></a>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+     
+ 
+
+        <!------all categories-------->
+        <div class="small-container">
+            <h2 class="title">Categories</h2>
+            <div class="row">
+                <div class="col-4">
+                    <a href="Watches.html">
+                    <img src="https://m.media-amazon.com/images/I/61+1mV90ohL._SL1296_.jpg">
+                    <h4>Watches</h4></a>
+                </div>
+                <div class="col-4">
+                    <a href="https://www.amazon.in/s?k=smart+phones&ref=nb_sb_noss_2">
+                    <img src="images/mobile_category.jpg">
+                    <h4>Mobiles</h4></a>
+                </div>
+                <div class="col-4">
+                    <a href="Men's Shoes.html">
+                    <img src="https://m.media-amazon.com/images/I/81fVnnKvTHL._UL1500_.jpg">
+                    <h4>Men's Shoes</h4></a>
+                </div>
+                <div class="col-4">
+                    <a href="mouse_keyboard.html">
+                    <img src="images/mouse_keyboard.jpg">
+                    <h4>Computer accessories</h4></a>
+                </div>
+                <div class="col-4">
+                    <a href="https://www.amazon.in/s?k=women+shoes&crid=GE44KMCNPWOH&sprefix=women+shoe%2Caps%2C966&ref=nb_sb_noss_1">
+                    <img src="https://m.media-amazon.com/images/I/71JI-o85t7L._UL1500_.jpg">
+                    <h4>Women's Shoes</h4></a>
+                </div>
+                <div class="col-4">
+                    <a href="https://www.amazon.in/s?k=sports+items&rh=n%3A1378509031&dc&crid=I3ZVJ9FZHWYD&qid=1652371352&rnid=3576079031&sprefix=sports+item%2Caps%2C367&ref=sr_nr_n_6">
+                    <img src="https://m.media-amazon.com/images/I/41eXV+BBxDL.jpg">
+                    <h4>Sports & Outdoors</h4></a>
+                </div>
+                <div class="col-4">
+                    <a href="https://www.flipkart.com/search?q=kitchen+items&sid=upp%2C5ix%2C01e&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_1_7_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_7_na_na_na&as-pos=1&as-type=RECENT&suggestionId=kitchen+items%7CKitchen+Containers&requestId=d53d5331-91a5-49df-8310-5a94e5531fcd&as-searchtext=kitchen">
+                    <img src="https://m.media-amazon.com/images/S/onsitepublishing-media-prod/9d797c4b-da17-4cbc-98fb-3dea5b1df65d/images/50fdf5a7-5b52-4022-a039-07b79d940511.jpg">
+                    <h4>Kitchen & Housewares</h4></a>
+                </div>
+                
+            </div>
+
+            <!----------latest product-------->
+
+
+            <h2 class="title">Latest Product</h2>
+            <div class="row">
+                <div class="col-4">
+                    <a href="product_details.html"><img src="images/Macbookpro14.jpeg"></a>
+                    <a href="product_details.html"><h4>2020 Apple MacBook Air Laptop: Apple M1 chip, 13.3-inch/33.74 cm Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, FaceTime HD Camera, Touch ID. Works with iPhone/iPad; Silver</h4></a>
+                    <p>Rs.85000</p>
+                </div>
+                <div class="col-4">
+                    <a href="https://www.amazon.in/s?k=IQOO-5+Gaming-+Edition&ref=nb_sb_noss">
+                    <img src="images/Oneplus.png">
+                    <h4>OnePlus pro- Edition</h4></a>
+                    <p> starting @ Rs. 30000</p>
+                </div>
+                <div class="col-4">
+                    <a href="https://www.amazon.in/s?k=Hifi-Speakers&ref=nb_sb_noss">
+                    <img src="images/speaker12.jpeg">
+                    <h4>Echo Dot</h4></a>
+                    <p>Echo Dot (3rd Gen) – New and improved smart speaker with Alexa (Black)
+                    </p>
+                    <p>Rs. 5000</p>
+                </div>
+                <div class="col-4">
+                    <a href="https://www.amazon.in/s?k=LG+Xnote+A310&ref=nb_sb_noss_2">
+                    <img src="images/Macbook_air.jpeg">
+                    <h4>Macbook air</h4></a>
+                    <p>2020 Apple MacBook Air Laptop: Apple M1 chip, 13.3-inch/33.74 cm Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, FaceTime HD Camera, Touch ID. Works with iPhone/iPad; Gold</p>
+                    <p>Rs. 86000</p>
+                </div>
+
+                <div class="col-4">
+                    <a href="product_details.html"><img src="images/boat.png"></a>
+                    <a href="product_details.html"><h4>Boat Rockerz</h4></a>
+                    <p>Rs. 2000</p>
+                </div>
+
+
+
+            </div>
+
+            <div class="row">
+                <div class="col-4">
+                    <a href="https://www.amazon.in/s?k=Pro-Audio+Speakers&ref=nb_sb_noss">
+                    <img src="images/sepaker_2_1.jpg">
+                    <h4>Pro-Audio Speakers</h4></a>
+                    <p>Rs. 7000</p>
+                </div>
+                <div class="col-4">
+                    <a href="https://www.amazon.in/s?k=Logitech+G15+Keyboard&ref=nb_sb_noss_2">
+                    <img src="images/keyboard_1_1.jpg">
+                    <h4>Logitech G15 Keyboard</h4></a>
+                    <p>Rs. 1500</p>
+                </div>
+                <div class="col-4">
+                    <a href="https://www.amazon.in/Apple-iPhone-13-128GB-Starlight/dp/B09G99CW2N/ref=sr_1_1_sspa?crid=3C6CMGEVER2JZ&keywords=iPhone%2B13&qid=1652339760&sprefix=%2Caps%2C525&sr=8-1-spons&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExQkszQTJIN0hPUFdNJmVuY3J5cHRlZElkPUEwMjY2NTkyMThSV05TRjQ5VVVBUyZlbmNyeXB0ZWRBZElkPUEwODcyNjcyMU1YSlo1M1lHVElOWiZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU&th=1">
+                    <img src="images/iphone13mini.jpeg">
+                    <h4>Apple iPhone 13 (128GB) - (Product) RED</h4></a>
+                    <p>Rs. 68000</p>
+                </div>
+                <div class="col-4">
+                    <a href="https://www.amazon.in/s?k=Logitech+gaming+Mouse&ref=nb_sb_noss_2">
+                    <img src="images/zebronics.jpeg">
+                    <h4>Zebronics Zeb-Transformer-M Optical USB Gaming Mouse with LED Effect(Black)</h4></a>
+                    <p>Rs.1200</p>
+                </div>
+            </div>
+        </div>
+
+        <!----------offer-------->
+        <div class="offer">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-2">
+                    <img src="images/exclusive.png" class="offer-img">
+                    </div>
+                    <div class="col-2">
+                        <p>Exclusively Available on Premier Mart</p>
+                        <h1>mi Smart Band</h1>
+                        <small>
+                            India’s No. 1 Fitness Band, 1.1-inch AMOLED Color Display, Magnetic Charging, 2 Weeks Battery Life, Personal Activity Intelligence (PAI), Women’s Health Tracking
+                        </small>
+                        <a href="https://www.amazon.in/s?k=smart+watch&crid=369V7S6DZFFP9&sprefix=sm%2Caps%2C373&ref=nb_sb_ss_midas-iss-sm_1_2" class="btn">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!----------brands-------->
+        <div class="brands">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-5">
+                        <img src="images/samsung.png">
+                    </div>
+                    <div class="col-5">
+                        <img src="images/logo-oppo.png">
+                    </div>
+                    <div class="col-5">
+                        <img src="images/realme.png">
+                    </div>
+                    <div class="col-5">
+                        <img src="images/Lenovo_logo_black.png">
+                    </div>
+                    <div class="col-5">
+                        <img src="images/nokia.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!----------footer-------->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download Our app</h3>
+                        <p>Download our app for android and ios mobile</p>
+                        <div class="app-logo">
+                            <img src="images/play-store.png">
+                            <img src="images/app-store.png">
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="images/xxx2.png"><!----image logo-->
+                        <p>Our purpose is to sustainability make the pleasure and benefits of technologies</p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>coupons</li>
+                            <li>Blog Posts</li>
+                            <li>Return policy</li>
+                            <li>join affiliate</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="footer-col-4">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <a href="https://www.facebook.com/profile.php?id=100058283611682">
+                            <li>Facebook</li></a>
+                            <a href="https://www.linkedin.com/in/darshan-yadav-9496b0201/">
+                            <li>LinkedIn</li></a>
+                            <a href="https://twitter.com/Darshan57925998">
+                            <li>Twitter</li></a>
+                            <a herf="https://www.instagram.com/darshanrao526/">
+                            <li>Instagram</li></a>
+                            <a href="https://www.youtube.com/channel/UC9g1tQMPK8UV20ihXq2bqvw">
+                            <li>You Tube</li></a>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!----------j script for toggle menu-------->
+        <script>
+            var menuitems = document.getElementById("menuitems");
+            menuitems.style.maxHeight = "0px";
+
+            function menutoggle()
+            {
+                if(menuitems.style.maxHeight == "0px")
+                {
+                    menuitems.style.maxHeight = "200px";
+                }
+                else
+                {
+                    menuitems.style.maxHeight = "0px";
+                }
+            }
+        </script>
+<!---------------------- Top button -----------------------> 
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+    </body>
+</html>
